@@ -3,6 +3,11 @@ package com.jmhockham.analytics.download
 /**
   * Created by jmhockham on 12/09/17.
   */
-class DataFilesDownloader {
-  //TODO get data from the gov API links
+object DataFilesDownloader extends App{
+
+  def getElectionsJson: String = {
+    val url = "http://lda.data.parliament.uk/elections.json?_view=Elections&_pageSize=376&_page=0"
+    scala.io.Source.fromURL(url).mkString
+  }
+
 }
