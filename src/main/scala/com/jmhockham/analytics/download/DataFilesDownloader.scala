@@ -10,7 +10,7 @@ object DataFilesDownloader extends App{
   }
 
   def getConstituenciesData: String = {
-    callUrl(("http://lda.data.parliament.uk/constituencies.json")
+    callUrl(("http://lda.data.parliament.uk/constituencies.json"))
   }
 
   private def callUrl(url: String): String = {
