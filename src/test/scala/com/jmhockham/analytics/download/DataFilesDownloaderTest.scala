@@ -13,6 +13,10 @@ class DataFilesDownloaderTest extends FlatSpec with Matchers {
     json should not be null
   }
 
+  "getElectionSummaries" should "return a list of case classes from valid json" in {
+
+  }
+
   "getConstituenciesData" should "not return null" in {
     val json = DataFilesDownloader.getConstituenciesData
     json should not be null
